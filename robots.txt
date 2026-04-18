@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# Block admin and API routes
+Disallow: /admin/
+Disallow: /api/
+Disallow: /user/
+Disallow: /merchant/
+Disallow: /agent/
+Disallow: /ticket/
+Disallow: /cron
+Disallow: /clear
+
+# Sitemap location
+Sitemap: https://www.deepay.srl/sitemap.xml

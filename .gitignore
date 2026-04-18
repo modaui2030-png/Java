@@ -1,18 +1,77 @@
-# Build and Release Folders
-bin-debug/
-bin-release/
-[Oo]bj/
+# ── Build artifacts ───────────────────────────────────────────────────────────
+node_modules/
+dist/
+.vite/
+*.log
+
+# ── IDE / Editor ──────────────────────────────────────────────────────────────
+.vs/
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.rsuser
+.DS_Store
+Thumbs.db
+
+# ── Python ────────────────────────────────────────────────────────────────────
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# ── Playwright ────────────────────────────────────────────────────────────────
+.playwright-mcp/
+
+# ── Jupyter notebooks ─────────────────────────────────────────────────────────
+*.ipynb
+.ipynb_checkpoints/
+
+# ── Laravel ───────────────────────────────────────────────────────────────────
+core/.env
+core/.env.*
+core/vendor/
+core/node_modules/
+core/storage/logs/*.log
+core/bootstrap/cache/*.php
+core/.phpunit.cache
+core/.phpunit.result.cache
+
+# ── Security: NEVER commit secrets or database dumps ─────────────────────────
+*.env
+*.env.*
+*.bak
+*.bak.*
+*.sql
+*.sql.zip
+*.dump
+*mysql_data*
+*.pem
+*.key
+
+# ── Temporary / upload artifacts ─────────────────────────────────────────────
+DEEPAY-ww.zip
+guidelines.zip
+*.zip
+src/imports/
+
+# ── Flutter build artifacts ──────────────────────────────────────────────────
+**/build/
+**/.dart_tool/
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+**/.packages
+**/.pub-cache/
+**/.pub/
+**/pubspec.lock
+**/*.iml
+**/.gradle/
+**/local.properties
+**/.cxx/
+
+# ── Compiled / generated ──────────────────────────────────────────────────────
+[Dd]ebug/
+[Rr]elease/
 [Bb]in/
-
-# Other files and folders
-.settings/
-
-# Executables
-*.swf
-*.air
-*.ipa
-*.apk
-
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
+[Oo]bj/
